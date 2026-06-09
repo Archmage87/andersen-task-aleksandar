@@ -1,0 +1,35 @@
+# General
+.DS_Store
+.vscode/
+
+# Environment Variables (CRITICAL)
+.env
+.env.*
+!.env.example
+frontend/.env.example
+backend/.env.example
+
+# Frontend (Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/coverage/
+
+# Backend (Python FastAPI)
+backend/venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+backend/env/
+backend/pip-log.txt
+backend/pip-delete-this-directory.txt
