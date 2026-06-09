@@ -2,9 +2,21 @@
 
 This is a full-stack Next.js and Python FastAPI application designed for deterministic health insurance claims adjudication.
 
-## Quick Start Commands
+## Environment Setup
 
-There are two helper scripts in this root directory to instantly run the application servers (make sure to run them from the root):
+Before running the application, you need to set up your environment variables. 
+
+1. **Backend Configuration**:
+   - Navigate to the `backend` directory.
+   - Copy `.env.example` to a new file named `.env`.
+   - Open the new `backend/.env` file and populate your `OPENAI_API_KEY` (required for parsing policies). The pricing constants are already provided.
+
+2. **Frontend Configuration**:
+   - Navigate to the `frontend` directory.
+   - Copy `.env.example` to a new file named `.env`.
+   - Open `frontend/.env` and ensure `NEXT_PUBLIC_API_URL` is set to `http://localhost:8000` (this should be already configured in the example).
+
+## Quick Start Commands
 
 1. **Start the Backend**: Double-click `run_backend.bat` or run it from the terminal:
    .\run_backend.bat
